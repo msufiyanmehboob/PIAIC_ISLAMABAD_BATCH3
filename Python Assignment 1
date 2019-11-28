@@ -1,0 +1,1115 @@
+In [2]:
+
+
+import this
+
+
+
+In [2]:
+
+
+5 + 8 # Operation
+#Opertors
+    # +, - ,/ , * , , $, **
+    # = , +=, -=, /=, *=, %=
+    # == , >, <, >=, <=
+# 5, 8 Operads
+
+
+Out[2]:
+13
+In [3]:
+
+
+#PEMDAS
+5 + 7 - 8 * (2//2)  +200
+#5 + 7 - 8 * (1)  +200
+#5 + 7 - 8   +200
+#12 - 8 +208
+#212 -9
+#204
+
+
+Out[3]:
+204
+In [4]:
+
+
+a = 8
+b = 8
+​
+print(a)
+print(b)
+​
+print(id(a))
+print(id(b))
+​
+b += 1
+print(id(a))
+print(id(b))
+
+
+
+8
+8
+140737073357424
+140737073357424
+140737073357424
+140737073357456
+In [5]:
+
+
+a = 7 
+type(a)
+​
+
+
+Out[5]:
+int
+In [6]:
+
+
+a = 20.7
+type(a)
+
+
+Out[6]:
+float
+In [7]:
+
+
+a = True
+type(a)
+
+
+Out[7]:
+bool
+In [8]:
+
+
+a = False
+type(a)
+
+
+Out[8]:
+bool
+In [9]:
+
+
+5 /5
+
+
+Out[9]:
+1.0
+In [10]:
+
+
+a ="1"
+type(a)
+
+
+Out[10]:
+str
+In [11]:
+
+
+a = """1"""
+type(a)
+
+
+Out[11]:
+str
+In [12]:
+
+
+"1" + "1"
+
+
+Out[12]:
+'11'
+In [13]:
+
+
+int ("1") + int ("1")
+
+
+Out[13]:
+2
+In [14]:
+
+
+a = 20
+type(a)
+
+
+Out[14]:
+int
+In [15]:
+
+
+a= "Pakistan"
+a * 2
+
+
+Out[15]:
+'PakistanPakistan'
+In [16]:
+
+
+1+7
+
+
+Out[16]:
+8
+In [17]:
+
+
+'1' + '7'
+
+
+Out[17]:
+'17'
+In [18]:
+
+
+names = {"Muhammad", "sufiyan", "Mehboob", 200}
+print(type(names))
+
+
+
+<class 'set'>
+In [19]:
+
+
+names = ["Muhammad", "sufiyan", "Mehboob", 200]
+print(type(names))
+
+
+
+<class 'list'>
+In [20]:
+
+
+#index       0          1        2      3
+names = ("Muhammad", "sufiyan", "Mehboob", 200)
+#index      -0          -1      -2      -3
+print(type(names))
+print(names[0])
+print(names[1])
+print(names[2])
+print(names[3])
+
+
+
+<class 'tuple'>
+Muhammad
+sufiyan
+Mehboob
+200
+In [21]:
+
+
+names = {"Muhammad", "sufiyan", "Mehboob", 200, "Sufiyan"}
+names = list(names)
+​
+print(names[0])
+print(type(names))
+
+
+
+Muhammad
+<class 'list'>
+In [22]:
+
+
+data = {
+    #key : Value
+    'names':"Muhammad Sufiyan Mehboob",
+    'fnames':"Ghulam Samdani",
+    'names':"MSM",
+     5     : 'Pakistan',
+    "a"    :[True, "Pakistan", 20, 3.0]
+}
+​
+data['a']
+
+
+Out[22]:
+[True, 'Pakistan', 20, 3.0]
+In [23]:
+
+
+a = "Muhammad Sufiyan Mehboob"
+dir(a)
+
+
+Out[23]:
+['__add__',
+ '__class__',
+ '__contains__',
+ '__delattr__',
+ '__dir__',
+ '__doc__',
+ '__eq__',
+ '__format__',
+ '__ge__',
+ '__getattribute__',
+ '__getitem__',
+ '__getnewargs__',
+ '__gt__',
+ '__hash__',
+ '__init__',
+ '__init_subclass__',
+ '__iter__',
+ '__le__',
+ '__len__',
+ '__lt__',
+ '__mod__',
+ '__mul__',
+ '__ne__',
+ '__new__',
+ '__reduce__',
+ '__reduce_ex__',
+ '__repr__',
+ '__rmod__',
+ '__rmul__',
+ '__setattr__',
+ '__sizeof__',
+ '__str__',
+ '__subclasshook__',
+ 'capitalize',
+ 'casefold',
+ 'center',
+ 'count',
+ 'encode',
+ 'endswith',
+ 'expandtabs',
+ 'find',
+ 'format',
+ 'format_map',
+ 'index',
+ 'isalnum',
+ 'isalpha',
+ 'isascii',
+ 'isdecimal',
+ 'isdigit',
+ 'isidentifier',
+ 'islower',
+ 'isnumeric',
+ 'isprintable',
+ 'isspace',
+ 'istitle',
+ 'isupper',
+ 'join',
+ 'ljust',
+ 'lower',
+ 'lstrip',
+ 'maketrans',
+ 'partition',
+ 'replace',
+ 'rfind',
+ 'rindex',
+ 'rjust',
+ 'rpartition',
+ 'rsplit',
+ 'rstrip',
+ 'split',
+ 'splitlines',
+ 'startswith',
+ 'strip',
+ 'swapcase',
+ 'title',
+ 'translate',
+ 'upper',
+ 'zfill']
+In [24]:
+
+
+a = "Muhammad Sufiyan Mehboob"
+print(a.upper())
+print(a)
+
+
+
+MUHAMMAD SUFIYAN MEHBOOB
+Muhammad Sufiyan Mehboob
+In [25]:
+
+
+a = "Muhammad Sufiyan Mehboob"
+print(a.upper())
+a
+
+
+
+MUHAMMAD SUFIYAN MEHBOOB
+Out[25]:
+'Muhammad Sufiyan Mehboob'
+In [26]:
+
+
+a = "Muhammad Sufiyan Mehboob"
+print(a.title())
+
+
+
+Muhammad Sufiyan Mehboob
+In [27]:
+
+
+a = "Muhammad Sufiyan Mehboob"
+a
+
+
+Out[27]:
+'Muhammad Sufiyan Mehboob'
+In [28]:
+
+
+a = "Muhammad Sufiyan Mehboob"
+print(a.capitalize())
+
+
+
+Muhammad sufiyan mehboob
+In [29]:
+
+
+a = "                                 Muhammad Sufiyan Mehboob                                        "
+a
+
+
+Out[29]:
+'                                 Muhammad Sufiyan Mehboob                                        '
+In [30]:
+
+
+a = "                                 Muhammad Sufiyan Mehboob                                        "
+print(len(a))
+print(a.strip())
+print(len(a.lstrip()))
+print(len(a.rstrip()))
+​
+
+
+
+97
+Muhammad Sufiyan Mehboob
+64
+57
+In [31]:
+
+
+a = "                                 Muhammad Sufiyan Mehboob                                        "
+a
+​
+
+
+Out[31]:
+'                                 Muhammad Sufiyan Mehboob                                        '
+In [32]:
+
+
+b= a.split()
+b
+​
+
+
+Out[32]:
+['Muhammad', 'Sufiyan', 'Mehboob']
+In [33]:
+
+
+" ".join(b)
+
+
+Out[33]:
+'Muhammad Sufiyan Mehboob'
+In [34]:
+
+
+a ="we are pakistan we love our country!"
+a
+
+
+Out[34]:
+'we are pakistan we love our country!'
+In [35]:
+
+
+#List[start:end:step]
+#aTuples[start:end:step]
+#String[start:end:step]
+​
+print(a)
+print(a[::])
+print(a[7:15:])
+print(a[::-1])
+
+
+
+we are pakistan we love our country!
+we are pakistan we love our country!
+pakistan
+!yrtnuoc ruo evol ew natsikap era ew
+In [37]:
+
+
+print(a)
+print(a.index("pakistan"))
+
+
+
+we are pakistan we love our country!
+7
+In [38]:
+
+
+str.isnumeric('5A')
+
+
+Out[38]:
+False
+In [39]:
+
+
+a = "drgsretsveghsjfhgf-dskgvsbvksv-3-3xmfbg f/3gshd"
+" ".join([i for i in a if str.isnumeric(i)])
+
+
+Out[39]:
+'3 3 3'
+In [40]:
+
+
+card = """
+Bahria University Islamabad
+name: Muhammad Sufiyan Mehboob
+Father_name: Ghulam Samdani
+Program: PIAIC
+"""
+​
+print(card)
+
+
+
+
+Bahria University Islamabad
+name: Muhammad Sufiyan Mehboob
+Father_name: Ghulam Samdani
+Program: PIAIC
+
+In [48]:
+
+
+name = "Muhammad Sufiyan Mehboob"
+fname = "Ghulam Samdani"
+program = "PIAIC"
+s = 200
+​
+card = """
+Bahria University Islamabad
+name: %s
+Father_name: %s
+Program: %s
+Score: %d
+"""
+​
+print(card%(name,fname,program,s))
+
+
+
+
+Bahria University Islamabad
+name: Muhammad Sufiyan Mehboob
+Father_name: Ghulam Samdani
+Program: PIAIC
+Score: 200
+
+In [43]:
+
+
+name = "Muhammad Sufiyan Mehboob"
+fname = "Ghulam Samdani"
+program = "PIAIC"
+s = 200
+​
+card = """
+Bahria University Islamabad
+name: {}
+Father_name: {}
+Program: {}
+Score: {}
+"""
+​
+print(card.format(name,fname,program,s))
+
+
+
+
+Bahria University Islamabad
+name: Muhammad Sufiyan Mehboob
+Father_name: Ghulam Samdani
+Program: PIAIC
+Score: 200
+
+In [44]:
+
+
+name = "Muhammad Sufiyan Mehboob"
+fname = "Ghulam Samdani"
+program = "PIAIC"
+s = 200
+​
+card = """
+Bahria University Islamabad
+name: {3}
+Father_name: {1}
+Program: {2}
+Score: {0}
+"""
+​
+print(card.format(name,fname,program,s))
+
+
+
+
+Bahria University Islamabad
+name: 200
+Father_name: Ghulam Samdani
+Program: PIAIC
+Score: Muhammad Sufiyan Mehboob
+
+
+Python Assignment No. 1 will be start declare all string data type methods
+
+Type Markdown and LaTeX: 
+𝛼
+2
+α2
+In [50]:
+
+
+s ='Muhammad Sufiyan Mehboob'
+dir(s)
+
+
+Out[50]:
+['__add__',
+ '__class__',
+ '__contains__',
+ '__delattr__',
+ '__dir__',
+ '__doc__',
+ '__eq__',
+ '__format__',
+ '__ge__',
+ '__getattribute__',
+ '__getitem__',
+ '__getnewargs__',
+ '__gt__',
+ '__hash__',
+ '__init__',
+ '__init_subclass__',
+ '__iter__',
+ '__le__',
+ '__len__',
+ '__lt__',
+ '__mod__',
+ '__mul__',
+ '__ne__',
+ '__new__',
+ '__reduce__',
+ '__reduce_ex__',
+ '__repr__',
+ '__rmod__',
+ '__rmul__',
+ '__setattr__',
+ '__sizeof__',
+ '__str__',
+ '__subclasshook__',
+ 'capitalize',
+ 'casefold',
+ 'center',
+ 'count',
+ 'encode',
+ 'endswith',
+ 'expandtabs',
+ 'find',
+ 'format',
+ 'format_map',
+ 'index',
+ 'isalnum',
+ 'isalpha',
+ 'isascii',
+ 'isdecimal',
+ 'isdigit',
+ 'isidentifier',
+ 'islower',
+ 'isnumeric',
+ 'isprintable',
+ 'isspace',
+ 'istitle',
+ 'isupper',
+ 'join',
+ 'ljust',
+ 'lower',
+ 'lstrip',
+ 'maketrans',
+ 'partition',
+ 'replace',
+ 'rfind',
+ 'rindex',
+ 'rjust',
+ 'rpartition',
+ 'rsplit',
+ 'rstrip',
+ 'split',
+ 'splitlines',
+ 'startswith',
+ 'strip',
+ 'swapcase',
+ 'title',
+ 'translate',
+ 'upper',
+ 'zfill']
+In [55]:
+
+
+name ='Muhammad Sufiyan Mehboob'
+print(name)
+print(name.capitalize()) #Only capitalize 1 character of string
+
+
+
+Muhammad Sufiyan Mehboob
+Muhammad sufiyan mehboob
+In [54]:
+
+
+name ='Muhammad Sufiyan Mehboob'
+print(name.casefold()) #lower all character of string
+
+
+
+muhammad sufiyan mehboob
+In [53]:
+
+
+name ='Muhammad Sufiyan Mehboob'
+print(name.center(40)) #taking space of 40 character and pring name in the middle
+
+
+
+        Muhammad Sufiyan Mehboob        
+In [56]:
+
+
+name='Muhammad Sufiyan Mehboob'
+print(name.count('a')) #print total number of a character like 'a'
+
+
+
+3
+In [57]:
+
+
+name='Muhammad Sufiyan Mehboob'
+print(name.encode()) #encode the string
+
+
+
+b'Muhammad Sufiyan Mehboob'
+In [58]:
+
+
+name='Muhammad Sufiyan Mehboob'
+print(name.endswith('l')) #compare with end character of string and reture true or false
+
+
+
+False
+In [75]:
+
+
+name ='S\tufiyan Mehboob'
+print(name.expandtabs(3)) #space between the character
+
+
+
+S  ufiyan Mehboob
+In [79]:
+
+
+name='Muhammad Sufiyan Mehboob'
+print(name.find('m')) #return the index of find character
+
+
+
+4
+In [80]:
+
+
+
+name='My Name is {fname} {lname}'
+print(name.format(fname='Muhammad',lname='Sufiyan Mehboob')) #Insert the fname and lname inside the placeholder{}, the fname and lname should be in fixed point
+
+
+
+My Name is Muhammad Sufiyan Mehboob
+In [81]:
+
+
+name={'fname':'Muhammad', 'lname':'Sufiyan Mehboob'}
+print('{fname} {lname}'.format_map(name))
+
+
+
+Muhammad Sufiyan Mehboob
+In [83]:
+
+
+name='Muhammad Sufiyan Mehboob' 
+print(name.index('S'))  #return the index of specific character
+
+
+
+9
+In [84]:
+
+
+name='Sufiyan039' 
+print(name.isalnum()) #return if string is alphanumeic or not e.g character and number
+
+
+
+True
+In [85]:
+
+
+name='MuhammadSufiyanMehboob' 
+print(name.isalpha()) #return true of false if string have all alphabets without space
+
+
+
+True
+In [86]:
+
+
+name='Muhammad Sufiyan Mehboob' 
+print(name.isascii())
+
+
+
+True
+In [87]:
+
+
+name='Muhammad Sufiyan Mehboob' 
+print(name.isdecimal()) #return if string have any decimal value
+
+
+
+False
+In [94]:
+
+
+name='Muhammad Sufiyan Mehboob' 
+print(name.isdigit()) #return if string have any digits
+
+
+
+False
+In [89]:
+
+
+name='MuhammadSufiyanMehboob' 
+print(name.isidentifier()) #return true or false if string have some identifier like start with _,or no space between word
+
+
+
+True
+In [92]:
+
+
+name='Muhammad Sufiyan Mehboob'
+print(name.islower()) #return true or false if string have all characters are lower case
+
+
+
+False
+In [93]:
+
+
+name='Muhammad Sufiyan Mehboob'
+print(name.isnumeric())
+number='15'
+print(number.isnumeric()) #return true or false if string have all characters are numeric
+
+
+
+False
+True
+In [95]:
+
+
+name='Muhammad Sufiyan Mehboob'
+print(name.isprintable()) #return true or false if string have all characters are printable
+
+
+
+True
+In [96]:
+
+
+name='Muhammad Sufiyan Mehboob'
+print(name.isspace())
+name='  '
+print(name.isspace())  #returns True if all the characters in a string are whitespaces, otherwise False
+
+
+
+False
+True
+In [97]:
+
+
+name='Muhammad Sufiyan Mehboob'
+print(name.istitle()) #return true or false if each word start with an upper case letter
+
+
+
+True
+In [99]:
+
+
+name='muhammad sufiyan mehboob'
+print(name.isupper())
+name='MUHAMMAD SUFIYAN MEHBOOB'
+print(name.isupper())  #return true or false if whole string will have upper case letter
+
+
+
+False
+True
+In [100]:
+
+
+
+name={'Muhammad','Sufiyan Mehboob'}
+print('  '.join(name)) #method takes all items in an iterable and joins them into one string. A string must be specified as the separator.
+
+
+
+Sufiyan Mehboob  Muhammad
+In [101]:
+
+
+name='Muhammad '
+name1=name.ljust(20)
+print(name1,"Sufiyan Mehboob")  #return 20 character space from left justified
+
+
+
+Muhammad             Sufiyan Mehboob
+In [102]:
+
+
+name='Muhammad Sufiyan Mehboob'
+print(name.lower())  #return all character in lower case
+
+
+
+muhammad sufiyan mehboob
+In [103]:
+
+
+name='   Muhammad Sufiyan Mehboob   '
+print(name)
+name='   Muhammad Sufiyan Mehboob   '
+print(name.lstrip())   #remove space for letf side
+
+
+
+   Muhammad Sufiyan Mehboob   
+Muhammad Sufiyan Mehboob   
+In [104]:
+
+
+name='Muhammad Sufiyan Mehboob'
+print(name.partition('Sufiyan Mehboob'))  #return a tuple
+
+
+
+('Muhammad ', 'Sufiyan Mehboob', '')
+In [105]:
+
+
+name='Muhammad Sufiyan Mehboob'
+print(name.replace('Sufiyan','Sufi'))  #replace the word to another word
+
+
+
+Muhammad Sufi Mehboob
+In [109]:
+
+
+name='Muhammad Sufiyan Mehboob'
+print(name.rfind('b')) #return the index almost rindex(),if value not found return -1
+
+
+
+23
+In [108]:
+
+
+name='Muhammad Sufiyan Mehboob'
+print(name.rindex('i')) #return the index almost rindex(),if value not found return error
+
+
+
+12
+In [110]:
+
+
+name='Muhammad Sufiyan Mehboob'
+print(name.rjust(30)) #return a justified version of string
+
+
+
+      Muhammad Sufiyan Mehboob
+In [111]:
+
+
+name='Muhammad Sufiyan Mehboob'
+print(name.rpartition('Sufiyan'))
+
+
+
+('Muhammad ', 'Sufiyan', ' Mehboob')
+In [112]:
+
+
+name='Muhammad Sufiyan Mehboob'
+print(name.rsplit()) #return in list
+
+
+
+['Muhammad', 'Sufiyan', 'Mehboob']
+In [113]:
+
+
+name='Muhammad Sufiyan Mehboob'
+print(name.rstrip())
+
+
+
+Muhammad Sufiyan Mehboob
+In [114]:
+
+
+name='Muhammad Sufiyan Mehboob'
+print(name.split())
+
+
+
+['Muhammad', 'Sufiyan', 'Mehboob']
+In [115]:
+
+
+name='Muhammad Sufiyan Mehboob'
+print(name.splitlines()) #return a single work list
+
+
+
+['Muhammad Sufiyan Mehboob']
+In [118]:
+
+
+name='Muhammad Sufiyan Mehboob'
+print(name.startswith('S'))
+name='Muhammad Sufiyan Mehboob'
+print(name.startswith('M')) #return true or false if the given character are starting character of whole string
+
+
+
+False
+True
+In [119]:
+
+
+name='Muhammad Sufiyan Mehboob'
+print(name.strip())
+
+
+
+Muhammad Sufiyan Mehboob
+In [120]:
+
+
+name='Muhammad Sufiyan Mehboob'
+print(name.swapcase())  #return first character of every work in lower and other whole string will be UPPER case
+
+
+
+mUHAMMAD sUFIYAN mEHBOOB
+In [123]:
+
+
+name='muhammad sufiyan mehboob'
+print(name.title()) #convert the first character of every word in UPPER Case
+
+
+
+Muhammad Sufiyan Mehboob
+In [124]:
+
+
+name='Muhammad Sufiyan Mehboob'
+print(name.upper()) #return the whole string in upper case
+
+
+
+MUHAMMAD SUFIYAN MEHBOOB
+In [129]:
+
+
+name='MUHAMMAD SUFIYAN MEHBOOB'
+print(name.zfill(25)) #add zeros after the total character of string with includes spaces
+
+
+
+0MUHAMMAD SUFIYAN MEHBOOB
+
+Now i will use 20 oprands with different oprators
+In [130]:
+
+
+4*7 - 8*3 + 2*9*7 / 6*10 + 4**9 - 3**7//4*5 - 9*12 + 22*13*7 / 8*7 + 15**9 - 5**9
+
+
+Out[130]:
+38441667521.75
+In [131]:
+
+
+7 + 3 - 5 * 0 / 16 + (17 * 34) + 13 - (28 ^ 21) + (14 ** 19) / 15 + 9 - 5 * 2 - 5 + 3 * 10 / 17 + 2 + 18
+
+
+Out[131]:
+3.984202639299276e+20
+In [132]:
+
+
+9 * 3 + 6 / 4 ** 20 // (12-14)**19/(15+7)**(11/12)
+
+
+Out[132]:
+26.941190718167743
+In [ ]:
+
+
+​
+
+
+
